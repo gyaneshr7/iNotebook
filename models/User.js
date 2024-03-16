@@ -25,5 +25,5 @@ const UserSchema = new Schema({
 });
 
 const User = mongoose.model('user', UserSchema);
-User.createIndexes({ maxTimeMS: 5000 });
+User.createIndexes({ maxTimeMS: 10000 });
 module.exports = User
